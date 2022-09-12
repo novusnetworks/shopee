@@ -15,7 +15,9 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 <link rel="modulepreload" href="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/2104.9f4e35389c4b5739.js.download" data-modern="true">
 <link rel="modulepreload" href="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/bundle.ee3f6c88bb2ad49d.js.download" data-modern="true">
 
+<!-- EDITS FOR SHOPEE PRODUCT DESIGN CHALLENGE -->
 <link rel="stylesheet" href="productPageStyle.css">
+<script type="text/javascript" src="productPage.js">
 
 <script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/f.txt"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/linkid.js.download"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/js"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/analytics.js.download"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/ld.js.download"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/config.js.download"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/config.js(1).download"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/events.js.download"></script><script type="text/javascript" async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/events.js(1).download"></script><script src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/139835196351422" async=""></script><script async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/fbevents.js.download"></script><script async="" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/gtm.js.download"></script><script data-webfe="config">
 window.__PAGE_ID__ = 1;
@@ -84,6 +86,7 @@ Kills 99% of germs that cause bad breath, plaque and gum problems. - Buy [Bundle
                 <div class="subscribeAndSaveDescription">
                     <span> This is a one-time purchase that will only deliver once!
                     </span>
+                    
                 </div>
 
                 <div class="flex items-center">
@@ -93,10 +96,16 @@ Kills 99% of germs that cause bad breath, plaque and gum problems. - Buy [Bundle
                     font-weight: 400; 
                     font-size: 1.5rem;
                     margin-top: 5px;">$7.90</div>
+                    <div class="zikqoN" style="margin-left: 10px; justify-content: center;">
+                        <div class="pJhgZK">
+                            <img src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/1cdd37339544d858f4d0ade5723cd477.png" width="25" height="15" class="_3VqYMj">
+                            Free shipping
+                            </div>
+                        </div>
                 </div>
 
                 <div style="margin-top: 15px;">
-                    <div class="_3pcTIL">
+                    <div class="">
                     <div class="_37uIr4">
                         <button type="button" class="btn btn-tinted btn--l _3f7_YI _1TpzVc" aria-disabled="false">
                             <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon _1FtIAE icon-add-to-cart"><g><g><polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></polyline><circle cx="6" cy="13.5" r="1" stroke="none"></circle><circle cx="11.5" cy="13.5" r="1" stroke="none"></circle></g><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line><line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line></g></svg>
@@ -196,17 +205,38 @@ Kills 99% of germs that cause bad breath, plaque and gum problems. - Buy [Bundle
                         
                 <div style="margin-top: 15px;">
                     <div class="_3pcTIL">
-                    <div class="_37uIr4">
-
-                        <button type="button" class="btn btn-solid-primary btn--l _3f7_YI" aria-disabled="false">
+                    <div class="_37uIr4 borderBlink">
+                        <button type="button" class="btn btn-solid-primary btn--l _3f7_YI" aria-disabled="false" onclick="addItem()">
                             Subscribe Now
-                            </button>
+                        </button>
                     </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="action-toast" id="add-item-action-toast" hidden="true">
+        <div class="toast">
+            <div class="toast__container">
+                <div class="toast__icon">
+                    <div class="action-toast__icon"><svg enable-background="new 0 0 12 12" viewBox="0 0 12 12" x="0" y="0" class="shopee-svg-icon icon-tick-bold"><g><path d="m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z"></path></g></svg>
+                        </div>
+                        </div>
+                        <div id="recurrence-section" 
+                        style="
+                        margin-bottom: 5px;">
+                            <span class="toast__text">
+                            <b>Deliver every:</b>
+                            </span>
+                            <span class="toast__text">
+                            1 month
+                            </span>
+                        </div>
+                        <div class="toast__text">Subscribe and Save item has been added to your shopping cart</div>
+
+                </div>
+        </div>
     </div>
 </div>
 </div></div><div style="display: contents;"><section class="Y71dLo"><a class="ZE-Our" href="https://shopee.sg/purchase-with-gifts/10821117/11538649001/91799978"><div class="wpr6OI"><div class="S99Rps">Spend $60.00 to get 1 gift(s)</div><div class="+iXN3M"><span>View More</span><svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" role="img" class="stardust-icon stardust-icon-arrow-right ieDaYO"><path stroke="none" d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path></svg></div></div><div class="iwPwtu"><div class="_31l9yM"><div class="vdWn+k"><div class="ygK2sy"><img width="invalid-value" height="invalid-value" class="_6-uBTs FkI2cn" style="object-fit: contain" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/8353e01efcc98ef2c77267885f1f42c9_tn"></div><div class="wruF36">[Bundle of 3] Listerine Kids Mouthwash with Berry Shield, 250mL</div></div><div class="vdWn+k"><div class="ygK2sy"><img width="invalid-value" height="invalid-value" class="_6-uBTs FkI2cn" style="object-fit: contain" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/07232de37dd9352caec5686336d3f31b_tn"><div class="I3zjoH">+ 293 item(s)</div></div></div></div><div class="Dq9C2H"><svg viewBox="0 0 12 12" fill="none" width="12" height="12" color="inherit" class="y+8NS0"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 6.5v4h1v-4h4v-1h-4v-4h-1v4h-4v1h4z" fill="currentColor"></path></svg></div><div class="_31l9yM"><div class="vdWn+k"><div class="ygK2sy"><img width="invalid-value" height="invalid-value" class="_6-uBTs FkI2cn" style="object-fit: contain" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/e2f8cd59559b00156345b40db927113c_tn"></div><div class="wruF36"><div class="R9rJlz">Free Gift</div>[J&amp;J GWP] Xiaomi EraClean Max</div></div></div></div></a></section></div><div class="CKGyuW"><div class="_1Yaflp page-product__shop"><div class="_1YY3XU"><a class="_2O_CHG" href="https://shopee.sg/supermarket"><div class="shopee-avatar _3q1-OA"><div class="shopee-avatar__placeholder"><svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="shopee-svg-icon icon-headshot"><g><circle cx="7.5" cy="4.5" fill="none" r="3.8" stroke-miterlimit="10"></circle><path d="m1.5 14.2c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="none" stroke-linecap="round" stroke-miterlimit="10"></path></g></svg></div><img class="shopee-avatar__img" src="./[Bundle of 3] Listerine 1L Mouthwash _ Shopee Singapore_files/76e6aaae044af3d7635daed8ae246ef4_tn"></div></a><div class="zYQ1eS"><div class="_3LoNDM">shopeesupermarketsg</div><div class="_1VQF5I">Active 3 hours ago</div><div class="_2xDNx7"><button type="button" class="btn btn-tinted btn--s btn--inline qBhKJX"><svg viewBox="0 0 16 16" class="shopee-svg-icon pa-h8D"><g fill-rule="evenodd"><path d="M15 4a1 1 0 01.993.883L16 5v9.932a.5.5 0 01-.82.385l-2.061-1.718-8.199.001a1 1 0 01-.98-.8l-.016-.117-.108-1.284 8.058.001a2 2 0 001.976-1.692l.018-.155L14.293 4H15zm-2.48-4a1 1 0 011 1l-.003.077-.646 8.4a1 1 0 01-.997.923l-8.994-.001-2.06 1.718a.5.5 0 01-.233.108l-.087.007a.5.5 0 01-.492-.41L0 11.732V1a1 1 0 011-1h11.52zM3.646 4.246a.5.5 0 000 .708c.305.304.694.526 1.146.682A4.936 4.936 0 006.4 5.9c.464 0 1.02-.062 1.608-.264.452-.156.841-.378 1.146-.682a.5.5 0 10-.708-.708c-.185.186-.445.335-.764.444a4.004 4.004 0 01-2.564 0c-.319-.11-.579-.258-.764-.444a.5.5 0 00-.708 0z"></path></g></svg>chat now</button><a class="btn btn-light btn--s btn--inline btn-light--link _1CglVM" href="https://shopee.sg/supermarket"><svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" stroke-width="0" class="shopee-svg-icon _1rcInn"><path d="m13 1.9c-.2-.5-.8-1-1.4-1h-8.4c-.6.1-1.2.5-1.4 1l-1.4 4.3c0 .8.3 1.6.9 2.1v4.8c0 .6.5 1 1.1 1h10.2c.6 0 1.1-.5 1.1-1v-4.6c.6-.4.9-1.2.9-2.3zm-11.4 3.4 1-3c .1-.2.4-.4.6-.4h8.3c.3 0 .5.2.6.4l1 3zm .6 3.5h.4c.7 0 1.4-.3 1.8-.8.4.5.9.8 1.5.8.7 0 1.3-.5 1.5-.8.2.3.8.8 1.5.8.6 0 1.1-.3 1.5-.8.4.5 1.1.8 1.7.8h.4v3.9c0 .1 0 .2-.1.3s-.2.1-.3.1h-9.5c-.1 0-.2 0-.3-.1s-.1-.2-.1-.3zm8.8-1.7h-1v .1s0 .3-.2.6c-.2.1-.5.2-.9.2-.3 0-.6-.1-.8-.3-.2-.3-.2-.6-.2-.6v-.1h-1v .1s0 .3-.2.5c-.2.3-.5.4-.8.4-1 0-1-.8-1-.8h-1c0 .8-.7.8-1.3.8s-1.1-1-1.2-1.7h12.1c0 .2-.1.9-.5 1.4-.2.2-.5.3-.8.3-1.2 0-1.2-.8-1.2-.9z"></path></svg>view shop</a></div></div></div><div class="_3_TQHS"><div class="y0THZ0"><div class="_2vnl9a _3-NFbD"><label class="_29u_kX">Ratings</label><span class="_1i6OkT">4.6m</span></div><a class="_18deDz _3-NFbD" href="https://shopee.sg/supermarket/all-products"><label class="_29u_kX">products</label><span class="_1i6OkT _1j0YH3">63k</span></a></div><div class="y0THZ0"><div class="_2vnl9a _3-NFbD"><label class="_29u_kX">response rate</label><span class="_1i6OkT">87%</span></div><div class="_2vnl9a _3-NFbD"><label class="_29u_kX">response time</label><span class="_1i6OkT">within hours</span></div></div><div class="y0THZ0"><div class="_2vnl9a _3-NFbD"><label class="_29u_kX">joined</label><span class="_1i6OkT">4 years ago</span></div><div class="_2vnl9a _3-NFbD"><label class="_29u_kX">follower</label><span class="_1i6OkT">427.9k</span></div></div></div></div><div class="page-product__content"><div class="page-product__content--left"><div class="product-detail page-product__detail"><div class="_3ICPhk"><div class="_2N2_VN">Product Specifications</div><div class="_2jz573"><div class="OktMMO"><label class="_27NlLf">Category</label><div class="flex items-center _3AZ0Vk"><a class="CyVtI7 _2yC5g9" href="https://shopee.sg/">Shopee</a><svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon _2ON4et icon-arrow-right"><path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path></svg><a class="CyVtI7 _2yC5g9" href="https://shopee.sg/Beauty-Personal-Care-cat.11012301">Beauty &amp; Personal Care</a><svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon _2ON4et icon-arrow-right"><path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path></svg><a class="CyVtI7 _2yC5g9" href="https://shopee.sg/Oral-Care-cat.11012301.11012407">Oral Care</a><svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0" class="shopee-svg-icon _2ON4et icon-arrow-right"><path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path></svg><a class="CyVtI7 _2yC5g9" href="https://shopee.sg/Mouthwash-cat.11012301.11012407.11012411">Mouthwash</a></div></div><div class="OktMMO"><label class="_27NlLf">Brand</label><a class="_8N1GCt" href="https://shopee.sg/search?brands=1146701">Listerine</a></div><div class="OktMMO"><label class="_27NlLf">Stock</label><div>758</div></div><div class="OktMMO"><label class="_27NlLf">Ships From</label><div>Singapore</div></div></div></div><div class="_3ICPhk"><div class="_2N2_VN">Product Description</div><div class="_2jz573"><div class="_1MqcWX"><p class="_2jrvqA">3 bottles x 1L Listerine Mint/Original/Total Care Zero/ Healthy White 
