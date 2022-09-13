@@ -50,11 +50,11 @@
     padding-left: 0px !important;
 }
 
-.borderBlink {
+/* .borderBlink {
     border: 3px #ff0000 solid;
     
     animation: blink 1s;
     animation-iteration-count: infinite;
 }
 
-@keyframes blink { 50% { border-color:transparent ; }  }
+@keyframes blink { 50% { border-color:transparent ; }  } */
